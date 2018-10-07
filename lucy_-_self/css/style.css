@@ -27,7 +27,7 @@ body {
 }
 
 
-h1#name a{
+h1#name {
     mix-blend-mode: difference !important;
     font-size:16vw;
     opacity: 0.85;
