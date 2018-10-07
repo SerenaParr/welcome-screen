@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/three.min.js" ></script>
+    <script src="./js/PLYLoader.js" ></script>
+    <script src="./js/detector.js" ></script>
+    <script src="./js/stats.min.js" ></script>    
+    <script src="./js/script.js" defer></script>
+  </head>  
+  <body>
+
+  <div id="main_content" class="main-content">
+    <div id="fit-text">
+      <h1 id="name">SERENAPARR<br/>WEBPORTAL<br/>➡➡➡➡➡➡</h1>
+    </div>
+  </div>
+  <div id="three_background"></div>
+    
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/jquery.fittext.js"></script>
+  <script type="text/javascript">
+    $("#fit-text").fitText( 1.15);
+  </script>
+    <script type="text/javascript">
+    
+      var cursors = [ 
+        "inherit",
+        "crosshair",
+        "help",
+        "move",
+        "pointer",
+        // "progress",
+        // "wait",
+      ];
+      
+      setInterval( function(){
+        
+        newCursor = cursors[ Math.floor( Math.random() * cursors.length ) ];
+        document.body.style.cursor = newCursor;
+        
+      }, 600 );
+    
+      document.body.onclick = function(){
+        window.location.href="https://www.serenaparr.com/info/";
+      }
+      
+    </script>
+  
+  </body>
+</html>
