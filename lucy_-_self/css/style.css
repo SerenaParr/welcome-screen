@@ -9,7 +9,7 @@ body {
     color: #fff;
     padding: 0;
     margin: 0;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
     font-family: 'TerminalGrotesqueRegular';
     text-align: center;
@@ -28,8 +28,9 @@ body {
 
 
 h1#name {
+    font-family: 'TerminalGrotesqueRegular';
     mix-blend-mode: difference !important;
-    font-size:16vw;
+    font-size: 32em;
     opacity: 0.85;
     margin: auto;
     display: block;
@@ -39,6 +40,83 @@ h1#name {
   width: 100%;
   margin: auto;
 }
+
+
+h3#topleft {  
+    font-family: sans-serif;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;    
+/*    font-style: italic; */    
+    font-size: 5em;
+    letter-spacing: .1em;
+    word-spacing: .5em;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center; 
+    position: fixed;  
+    top: 20%;
+    left: 5px;
+}
+
+h3#topleft .em {
+    font-family: serif;
+    font-style: italic;
+    font-size: .75em;     
+    letter-spacing: .045em;
+    word-spacing: 2em;
+    line-height: .05em;
+    text-align: center;
+}
+}
+
+
+h3#topright {  
+    font-family: serif;
+    -webkit-text-fill-color: blue; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: grey;    
+    font-style: italic;
+    font-size: 5em;
+    opacity: 1;
+    margin: auto;
+    position: fixed;
+    top: 8px;
+    right: 30px;
+}
+
+
+
+h3#bottomright {  
+    font-family: serif;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;    
+    font-style: italic;
+    font-size: 5em;
+    opacity: 1;
+    margin: auto;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+h3#bottomleft {  
+    font-family: serif;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;    
+    font-style: italic;
+    font-size: 5em;
+    opacity: 1;
+    margin: auto;
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+}
+
 
 /*body {
     background: #000;

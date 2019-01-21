@@ -16,7 +16,7 @@
                 document.body.appendChild(container);
                 camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 100000 );
                 camera.position.z =  - 4000;
-                //
+                
                 var urls = [
                     "./images/Magic_Eye_Raindrop.png", 
                     "./images/Magic_Eye_Raindrop.png",
@@ -26,6 +26,14 @@
                     "./images/Magic_Eye_Raindrop.png"
 
                 ];
+               // var urls = [
+               //      "./images/flag.jpg", 
+               //      "./images/flag.jpg", 
+               //      "./images/flag.jpg", 
+               //      "./images/flag.jpg", 
+               //      "./images/flag.jpg", 
+               //      "./images/flag.jpg" 
+               //  ];
                 var textureCube = new THREE.CubeTextureLoader().load( urls );
                 textureCube.mapping = THREE.CubeRefractionMapping;
                 scene = new THREE.Scene();
